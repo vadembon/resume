@@ -1,102 +1,243 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!--шапка-->
-    <header>
-        <nav>
-        <a href="" lang="en">WebStudio</a>
-        <ul>
-            <li><a href="">Студия</a></li>
-            <li><a href="">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
-        </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </header>
-    <!--основной контент-->
-    <main>
-        <!--главный заголовок-->
-    <section>
-        <h1>Эффективные решения <br> для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
-    </section>
-    <!--наши преимущества-->
-    <section>
-        <h2 hidden>Наши преимущества</h2>
-        <ul>
-            <li>
-                <h3>Внимание к деталям</h3>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <title>resume</title>
+  </head>
+  <body class="page">
+    <!-- Main -->
+    <div class="main">
+      <!--Main content-->
+      <div class="main_content">
+        <!-- About user -->
+        <div class="about">
+          <h2 class="about-position">FrontEnd Developer</h2>
+          <h1 class="about-name">Vadym Bondarenko</h1>
+          <p class="about-description">
+            I am looking for a job as a junior frontend developer or trainee with further
+            employment. I have experience working with team projects based on Agile/Scrum
+            methodologies. I am not afraid to take responsibility, I always strive to learn new
+            technologies and methods, I actively study English, I adequately accept criticism.
+          </p>
+        </div>
+        <!-- Projects -->
+        <div class="projects">
+          <h3 class="title">Projects</h3>
+          <ol class="projects-list">
+            <li class="project-item">
+              <p class="project">
+                <a
+                  href="https://vadembon.github.io/iceCream-team/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  Ice Cream</a
+                >
+                <span class="project-bracket">[ HTML, SASS, JS, Parcel ]</span>
+                A website with a responsive layout. Role: Scrum Master, Developer.<br />
+                In the position of scrum master - I regulated the deadline of the project. Conducted
+                daily Stand Up to plan the work of the team. Monitored the availability of tasks for
+                all team members and the deadlines for their implementation. Working with Trello.<br />
+                As a developer:<br />
+                - implemented the Header Hero section.<br />
+                - in the header there is a logo, a navigation menu and a button. On mobile and
+                tablet versions, the navigation menu is displayed as a sliding sidebar.<br />
+                - the menu is implemented with anchor links that lead to the relevant sections of
+                the layout. <br />- images on Hero should be positioned absolutely. In addition,
+                they can be animated when the page is loaded.
+              </p>
             </li>
-            <li>
-                <h3>Пунктуальность</h3>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <li class="project-item">
+              <p class="project">
+                <a
+                  href="https://vadembon.github.io/filmoteka-team-11/"
+                  target="_blank"
+                  class="project-link"
+                  >Filmoteka</a
+                >
+                <span class="project-bracket"
+                  >[HTML, SASS, JS, Handlebars, REST API, Axios, Parcel]</span
+                >
+                Application for choosing a movie. Role: Scrum Master, Developer.<br />In the
+                position of scrum master - I regulated the deadline of the project. Conducted daily
+                Stand Up to plan the work of the team. Monitored the availability of tasks for all
+                team members and the deadlines for their implementation. Working with Trello. <br />
+                As a developer:<br />
+                - implemented adaptive layout.<br />
+                - opening a modal with dynamically substituted information about the film <br />- by
+                clicking the "Add to watched" button, the movie is added to the watched movies of
+                the current user (local-storage)<br />
+                - by clicking the "Add to queue" button, the movie is added to the queue of the
+                current user (local-storage)<br />
+                - similarly with deletion.
+              </p>
             </li>
-            <li>
-                <h3>Планирование</h3>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <li class="project-item">
+              <p class="project">
+                <a
+                  href="https://vadembon.github.io/goit-react-hw-05-movies/"
+                  target="_blank"
+                  class="project-link"
+                  >Filmoteka React project</a
+                >
+                <span class="project-bracket"
+                  >[React, JS, Styled-components, REST API, Axios, Webpack]</span
+                >
+                Role: Developer.<br />
+                Basic routing has been created for the movie search and storage application.
+              </p>
             </li>
-            <li>
-                <h3>Современные технологии</h3>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-        </ul>
-    </section>
-    <!--чем мы занимаемся-->
-    <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-            <li><img src="./img/img-1.jpg" alt="верстка" width="370"></li>
-            <li><img src="./img/img-2.jpg" alt="разработка приложения" width="370"></li>
-            <li><img src="./img/img-3.jpg" alt="палитра на планшете" width="370"></li>
-        </ul>
-    </section>
-    <!--наша команда-->
-    <section>
-        <h2>Наша команда</h2>
-        <ul>
-            <li>
-                <img src="./img/img-4.jpg" alt="Product Designer" width="270">
-                <h3>Игорь Демьяненко</h3>
-                <p lang="en">Product Designer</p>
-            </li>
-            <li>
-                <img src="./img/img-5.jpg" alt="Frontend Developer" width="270">
-                <h3>Ольга Репина</h3>
-                <p lang="en">Frontend Developer</p>
-            </li>
-            <li>
-                <img src="./img/img-6.jpg" alt="Marketing" width="270">
-                <h3>Николай Тарасов</h3>
-                <p lang="en">Marketing</p>
-            </li>
-            <li>
-                <img src="./img/img-7.jpg" alt="UI Designer" width="270">
-                <h3>Михаил Ермаков</h3>
-                <p lang="en">UI Designer</p>
-            </li>
-        </ul>
-    </section>
-    </main>
-    <!--подвал-->
-    <footer>
-        <a href="" lang="en">WebStudio</a>
-        <address>
-            <ul>
-                <li><a href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ol>
+        </div>
+        <!-- work -->
+        <div class="work">
+          <h3 class="title">Work Experience</h3>
+          <!-- Company I -->
+          <div>
+            <h4 class="work-position">Founder MB Atelier</h4>
+            <span class="organization">MB Atelier</span>
+            <span class="period">
+              <span class="line">|</span>
+              september 2014 - Present
+            </span>
+
+            <ul class="work-list">
+              <li class="work-list-item">adjustment of production</li>
+              <li class="work-list-item">logistics</li>
+              <li class="work-list-item">creating a team</li>
+              <li class="work-list-item">monitoring</li>
+              <li class="work-list-item">task planning</li>
             </ul>
-        </address>
-    </footer>
-</body>
+          </div>
+
+          <!-- Education -->
+          <div class="education">
+            <h3 class="title">Education</h3>
+            <div>
+              <h4 class="education-facility">IT School GoIT (Kyiv)</h4>
+              <p class="period">2022 - 2023</p>
+              <h5 class="education-specialization">Full stack developer</h5>
+            </div>
+            <div>
+              <h4 class="education-facility">
+                Kyiv National University of Technologies and Design (KNUTD)
+              </h4>
+              <p class="period">2005- 2011</p>
+              <h5 class="education-specialization">
+                Design of footwear and haberdashery, Master of Engineering - MEng
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img src="img/photo_resume2.jpeg" alt="My photo" class="photo" />
+        <!--Contacts -->
+        <div class="contacts">
+          <h3 class="sidebar-title">Contacts</h3>
+          <div>
+            <p class="contact-item">
+              <a class="contact-link" href="tel:+380665640662">+38 (066)564 06 62</a>
+            </p>
+            <p class="contact-item">
+              <a class="contact-link" href="vadem.bondarenko@gmail.com"
+                >vadem.bondarenko@gmail.com</a
+              >
+            </p>
+            <p class="contact-item">
+              <a class="contact-link" href="https://www.linkedin.com/in/vadym-bondarenko-60b171252/"
+                >Linkedin</a
+              >
+            </p>
+            <p class="contact-item">
+              <a class="contact-link" href="https://github.com/vadembon">GitHub</a>
+            </p>
+            <p class="contact-item contact-link">Kyiv, Ukraine</p>
+          </div>
+        </div>
+        <!-- Tech skills -->
+        <div class="tech-skills">
+          <h3 class="sidebar-title">Tech skills</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item">
+              <span class="tech-skills-text"> HTML5/CSS3/SASS</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">JavaScript</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">React</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Redux</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">REST API</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Handlebars</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Webpack</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Parcel</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">Node.js</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-text">MongoDB</span>
+            </li>
+          </ul>
+        </div>
+        <!--Soft skills -->
+
+        <div class="soft-skills">
+          <h3 class="sidebar-title">Soft skills</h3>
+          <ul class="soft-skills-list">
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">Attention to detail</span>
+            </li>
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">Teamwork</span>
+            </li>
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">Strong Adaptation Skills</span>
+            </li>
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">High Analytics Skills</span>
+            </li>
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">Communicative</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Languages -->
+
+        <div class="soft-skills">
+          <h3 class="sidebar-title">Languages</h3>
+          <ul class="soft-skills-list">
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">English - Pre-Intermediate (A2)</span>
+            </li>
+            <li class="soft-skills-item">
+              <span class="soft-skills-text">Ukrainian - Native</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>
