@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f5f7fa;
+  /* background-color: #f5f7fa; */
 }
 h1,
 h2,
@@ -21,7 +21,7 @@ p {
 }
 .main_content {
   background-color: #ffffff;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
   padding: 105px 90px;
 }
 
@@ -52,7 +52,7 @@ p {
   line-height: 24px;
   color: #595959;
   margin-bottom: 40px;
-  width: 400px;
+  /* width: 400px; */
 }
 /* projects styles */
 .projects {
