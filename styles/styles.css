@@ -19,6 +19,7 @@ p {
   flex-direction: row-reverse;
   width: 1200px;
   /* margin: 0 auto; */
+  margin-bottom: 8px;
 }
 .main_content {
   background-color: #ffffff;
