@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   /* background-color: #f5f7fa; */
 }
+body,
 h1,
 h2,
 h3,
@@ -16,8 +17,8 @@ p {
 .main {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
-  margin: 0 auto;
+  width: 1400px;
+  /* margin: 0 auto; */
 }
 .main_content {
   background-color: #ffffff;
