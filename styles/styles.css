@@ -160,6 +160,10 @@ p {
   color: #000000;
   margin-bottom: 30px;
 }
+.education-link {
+  margin-left: 0px;
+}
+
 /* sidebar styles */
 .sidebar {
   padding-right: 40px;
